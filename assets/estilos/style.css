@@ -1,0 +1,75 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    box-sizing: border-box;
+}
+/* HEADER E MENU */
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    background-color: #ffffff;
+}
+.logo {
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 7rem;
+}
+.logo:hover {
+    color: #7700ff;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .3rem;
+}
+.menu__item {
+    display: flex;
+}
+.menu__link {
+    text-decoration: none;
+    color: #333333;
+}
+.menu__link:hover {
+    color: #7700ff;
+}
+.header__textos {
+    font-size: 25px;
+    font-weight: bold;
+}
+.descricao {
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 100;
+    color: grey;
+    margin: 15px 0;
+}
+.header__conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rede-social {
+    color: #333333;
+    margin-right: 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.imagem_seta {
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+}
+.header__perfil__imagem {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.header__perfil__imagem:hover {
+    margin-left: 30px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
