@@ -3,24 +3,32 @@
         background: blue;
     }
     .logo {
-        padding-left:0;
+        padding-left: 1rem;
     }
     .menu {
         flex-direction: column;
         justify-content: center;
     }
-    .menu__item {
-        flex-direction: column;
-    }
     .menu__lista {
-        padding: .2rem 0;
+        visibility: hidden;
+    }
+    .ativo {
+        margin-right: 5px;
     }
     .header__textos,
     .descricao {
         width: 250px;
     }
     .header__perfil__imagem {
-        display: none;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    .header__conteudo {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 10px;
     }
 }
 
@@ -28,21 +36,26 @@
     body {
         background: yellow;
     }
-    .menu__item {
-        flex-direction: row;
+    .logo {
+        padding-left:0;
     }
-    .menu__lista {
-        padding: .5rem;
+    .menu {
+        justify-content: space-between;
+        flex-direction: row;
     }
     .header__textos,
     .descricao {
         width: 300px;
     }
     .header__perfil__imagem {
-        display: block;
         margin: 15px 10px;
         width: 200px;
         height: 200px;
+    }
+    .header__conteudo {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -57,15 +70,6 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    .menu__item {
-        flex-direction: row;
-    }
-    .menu__lista {
-        padding: .5rem;
-    }
-    .header__conteudo {
-       flex-direction: column;
-    }
     .header__textos,
     .descricao {
         margin: 10px 0;
@@ -73,7 +77,6 @@
     }
     .header__perfil__imagem 
     {
-        display: block;
         margin: 15px 0;
     }
 }
@@ -87,6 +90,7 @@
     }
     .menu__lista {
         padding: .5rem;
+        visibility: visible;
     }
     .header__textos,
     .descricao {
@@ -94,9 +98,10 @@
     }
     .header__conteudo {
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
      }
      .header__perfil__imagem {
-        display: block;
         margin: 40px;
         margin-left: 10px;
      }

@@ -16,6 +16,7 @@ main {
     cursor: pointer;
     font-size: 16px;
     padding-left: 7rem;
+    font-weight: bold;
 }
 .logo:hover {
     color: #7700ff;
@@ -36,6 +37,10 @@ main {
 .menu__link:hover {
     color: #7700ff;
 }
+.menu__link.ativo {
+    font-weight: bold;
+    visibility: visible;
+}
 .header__textos {
     font-size: 25px;
     font-weight: bold;
@@ -49,8 +54,6 @@ main {
 }
 .header__conteudo {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .rede-social {
     color: #333333;
@@ -64,8 +67,6 @@ main {
     height: 10px;
 }
 .header__perfil__imagem {
-    width: 250px;
-    height: 250px;
     border-radius: 50%;
 }
 .header__perfil__imagem:hover {
@@ -73,3 +74,4 @@ main {
     transform: scale(1.2);
     cursor: pointer;
 }
+/* SECTION SOBRE MIM */
