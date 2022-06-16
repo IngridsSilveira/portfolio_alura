@@ -6,8 +6,9 @@
         padding-left: 1rem;
     }
     .menu {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
+        margin-bottom: 10px;
     }
     .menu__lista {
         visibility: hidden;
@@ -96,11 +97,6 @@
     .descricao {
         width: 500px;
     }
-    .header__conteudo {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-     }
      .header__perfil__imagem {
         margin: 40px;
         margin-left: 10px;

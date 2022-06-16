@@ -1,16 +1,40 @@
+/* GERAL */
 body {
-    width: 100vw;
+    width: 98.7vw;
     height: 100vh;
 }
 main {
     box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+ }
+.geral {
+    height: auto;
+    width: 100%;
+}
+.blue {
+    background-color: #c2ffff;
+}
+.white {
+    background-color: #fafafa;
 }
 /* HEADER E MENU */
 .header {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
     background-color: #ffffff;
+    width: 100%;
+    height: auto;
 }
 .logo {
     cursor: pointer;
@@ -42,18 +66,15 @@ main {
     visibility: visible;
 }
 .header__textos {
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: bold;
 }
 .descricao {
     line-height: 1;
-    font-size: 16px;
+    font-size: .9rem;
     font-weight: 100;
     color: grey;
     margin: 15px 0;
-}
-.header__conteudo {
-    display: flex;
 }
 .rede-social {
     color: #333333;
@@ -75,3 +96,64 @@ main {
     cursor: pointer;
 }
 /* SECTION SOBRE MIM */
+.sobre_textos {
+    margin: 20px 0;    
+    padding-right:16rem;
+}
+.titulo_padrao {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #4d4d4d;
+}
+/* SECTION SKILLS */
+.skills,
+.hobbies {
+    display: flex;
+    margin: 20px 0;
+}
+.quadrado {
+    margin-left: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.quadrado_titulo {
+    font-weight: bold;
+    margin-top: 5px;
+}
+/* SECTION FORMAÇÃO ACADÊMICA */
+.quadrado_formacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 180px;
+    height: 160px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.formacoes_alinhado {
+    display: flex;
+}
+.imagem_formacao {
+    width: 150px;
+}
+.textos_formacao {
+    margin-left: 20px;
+    margin-top: -12px;
+}
+.titulo_formacao {
+    font-weight: bold;
+    color: #676666;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.descricao_formacao {
+    font-size: 12px;
+}
+/* SECTION PROJETOS */
