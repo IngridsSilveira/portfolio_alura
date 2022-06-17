@@ -301,3 +301,12 @@ main {
     height: 50px;
     cursor: pointer;
 }
+/* RODAPE */
+.rodape {
+    background-color: #fafafa;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
