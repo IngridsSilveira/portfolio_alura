@@ -155,12 +155,29 @@
                         <h2 class="titulo_padrao">Contato</h2>
                         <p class="descricao">Quer entar em contato comigo?</p>
                         <p class="descricao_form">Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-                        <form action="mailto:ingridsouzaok@gmail.com" method="get" class="form">
-                            <input class="input_padrao active" type="text" placeholder="Nome">
-                            <input class="input_padrao active" type="email" placeholder="E-mail">
-                            <input class="input_padrao active" type="text" placeholder="Assunto">
-                            <textarea class="input_padrao mensagem active" cols="30" rows="10" placeholder="Mensagem"></textarea> 
-                           <input type="button" class="btn_contato" value="Enviar mensagem">
+                        <form id="form" action="mailto:ingridsouzaok@gmail.com" method="POST" class="form">
+                        <fieldset>
+                            <div class="input-container">
+                                <input name="nome" id="nome" class="input active" type="text" placeholder="Nome" data-tipo="nome" minlength="20" required>
+                                <label class="input_label" for="nome"></label>
+                                <span class="input-mensagem-erro"></span>
+                            </div>
+                            <div class="input-container">
+                                <input name="email" id="email" class="input active" type="email" placeholder="E-mail" data-tipo="email" required>
+                                <label class="input_label" for="email"></label>
+                                <span class="input-mensagem-erro"></span>
+                            </div>
+                            <div class="input-container">
+                                <input name="assunto" id="assunto" class="input active" type="text" placeholder="Assunto" data-tipo="assunto" minlength="50" required>
+                                <label for="assunto" class="input_label"></label>
+                                <span class="input-mensagem-erro"></span>
+                            </div>
+                            <div class="input-container">
+                                <textarea id="mensagem" class="input mensagem active" cols="30" rows="10" placeholder="Mensagem" data-tipo="mensagem" minlength="300" required></textarea>
+                                <span class="input-mensagem-erro"></span>
+                            </div>
+                           <input type="submit" class="btn_contato" value="Enviar" id="sendmail">
+                        </fieldset>
                         </form>
                     </div>
                 </div>
@@ -170,6 +187,6 @@
             <p>Desenvolvido por Ingrid Souza</p>
         </footer>
     </main>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
 </body>
 </html>

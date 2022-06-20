@@ -280,18 +280,15 @@ main {
     display: flex;
     flex-direction: column;
 }
-.input_padrao {
+.input {
     border: none;
     border-radius: 3px;
     width: 100%;
     margin: 15px 0;
     height: 40px;
 }
-.input_padrao.mensagem {
+.input.mensagem {
     height: 80px;
-}
-.input_padrao::placeholder {
-    font-size: 14px;
 }
 .btn_contato {
     border: none;
@@ -309,4 +306,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/*Mensagens erro*/
+.input-container--invalido {
+    color: red;
 }
