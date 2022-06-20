@@ -27,11 +27,11 @@ main {
     height: auto;
     width: 100%;
 }
-.blue {
-    background-color: #e4ffeb;
+.black {
+    background-color: #333333;
 }
-.white {
-    background-color: #fafafa;
+.branco {
+    background-color: #f4f4f4;
 }
 /* TODOS OS HOVERS */
 .logo:hover {
@@ -98,11 +98,19 @@ main {
     font-size: 2rem;
     font-weight: bold;
 }
+.descricaoheader {
+    line-height: 1;
+    font-size: .9rem;
+    font-weight: 100;
+    color: #4d4d4d;
+    margin: 15px 0;
+    width: 450px;
+}
 .descricao {
     line-height: 1;
     font-size: .9rem;
     font-weight: 100;
-    color: grey;
+    color: #f4f4f4;
     margin: 15px 0;
 }
 .rede-social {
@@ -135,14 +143,19 @@ main {
     letter-spacing: 2px;
     color: #4d4d4d;
 }
+.titulo_padrao_branco {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f4f4f4;
+}
 /* SECTION SKILLS */
 .skills,
 .hobbies {
     display: flex;
-    margin: 20px 0;
+    
 }
 .quadrado {
-    margin-left: 20px;
     padding: 10px;
     display: flex;
     align-items: flex-end;
@@ -178,12 +191,13 @@ main {
 }
 .titulo_formacao {
     font-weight: bold;
-    color: #676666;
+    color: #f4f4f4;
     font-size: 16px;
     margin-bottom: 5px;
 }
 .descricao_formacao {
-    font-size: 12px;
+    font-size: 13px;
+    color: #ccc;
 }
 /* SECTION PROJETOS */
 .projetos_article {
@@ -272,8 +286,9 @@ main {
 }
 .descricao_form {
     margin-top: -9px;
-    color: grey;
+    color: #ccc;
     font-weight: 100;
+    font-size: 13px;
     margin-bottom: 20px;
 }
 .form {
@@ -294,8 +309,6 @@ main {
     border: none;
     background-color: #7700ff;
     color: #fff;
-    width: 150px;
-    height: 50px;
     cursor: pointer;
 }
 /* RODAPE */
