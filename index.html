@@ -154,10 +154,12 @@
                         <h2 class="titulo_padrao_branco">Contato</h2>
                         <p class="descricao">Quer entar em contato comigo?</p>
                         <p class="descricao_form">Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-                        <form id="form" action="mailto:ingridsouzaok@gmail.com" method="POST" class="form">
+                        <form id="form" action="https://api.staticforms.xyz/submit" method="POST" class="form">
+                            <input type="hidden" name="accessKey" value="276987cd-09d2-478e-b968-0b76c74b811c">
+                            <input type="hidden" name="redirectTo" value="https://ingridssilveira.github.io/IngridSouza/">
                         <fieldset>
                             <div class="input-container">
-                                <input name="nome" id="nome" class="input active" type="text" placeholder="Nome" data-tipo="nome" minlength="20" required>
+                                <input name="name" id="nome" class="input active" type="text" placeholder="Nome" data-tipo="nome" minlength="20" required>
                                 <label class="input_label" for="nome"></label>
                                 <span class="input-mensagem-erro"></span>
                             </div>
@@ -167,15 +169,15 @@
                                 <span class="input-mensagem-erro"></span>
                             </div>
                             <div class="input-container">
-                                <input name="assunto" id="assunto" class="input active" type="text" placeholder="Assunto" data-tipo="assunto" minlength="50" required>
+                                <input name="subject" id="assunto" class="input active" type="text" placeholder="Assunto" data-tipo="assunto" minlength="50" required>
                                 <label for="assunto" class="input_label"></label>
                                 <span class="input-mensagem-erro"></span>
                             </div>
                             <div class="input-container">
-                                <textarea id="mensagem" class="input mensagem active" cols="30" rows="10" placeholder="Mensagem" data-tipo="mensagem" minlength="300" required></textarea>
+                                <textarea name="message" id="mensagem" class="input mensagem active" cols="30" rows="10" placeholder="Mensagem" data-tipo="mensagem" minlength="300" required></textarea>
                                 <span class="input-mensagem-erro"></span>
                             </div>
-                           <input action="mailto:ingridsouzaok@gmail.com" method="POST" type="submit" class="btn_contato" value="Enviar">
+                           <input type="submit" class="btn_contato" value="Enviar">
                         </fieldset>
                         </form>
                     </div>
