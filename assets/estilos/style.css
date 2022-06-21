@@ -1,6 +1,6 @@
 /* GERAL */
 * {
-    transition: .8s ease-in-out;
+    transition: .4s ease-in-out;
 }
 body {
     width: 98.7vw;
@@ -58,8 +58,8 @@ main {
     border: 1px solid #7700ff;
     color: #7700ff; 
 }
-.input_padrao.active:hover {
-    border-bottom: 2px solid #7700ff;
+.input.active:hover {
+    border: 2px solid #7700ff;
 }
 .btn_contato:hover {
     background: #fafafa;
@@ -104,14 +104,6 @@ main {
     font-weight: 100;
     color: #4d4d4d;
     margin: 15px 0;
-    width: 450px;
-}
-.descricao {
-    line-height: 1;
-    font-size: .9rem;
-    font-weight: 100;
-    color: #f4f4f4;
-    margin: 15px 0;
 }
 .rede-social {
     color: #333333;
@@ -133,9 +125,12 @@ main {
     cursor: pointer;
 }
 /* SECTION SOBRE MIM */
-.sobre_textos {
-    margin: 20px 0;    
-    padding-right:16rem;
+.descricao {
+    line-height: 1;
+    font-size: .9rem;
+    font-weight: 100;
+    color: #f4f4f4;
+    margin: 15px 0;
 }
 .titulo_padrao {
     font-size: 1.6rem;
@@ -212,12 +207,8 @@ main {
     justify-content: center;
 }
 .projeto_imagem {
-    width: 100%;
     height: auto;
     border-radius: 5px;
-}
-.projetos_textos {
-    margin-right: 40px;
 }
 .titulo_projeto {
     font-weight: bold;

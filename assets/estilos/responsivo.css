@@ -2,13 +2,18 @@
     body {
         background: blue;
     }
+
     .logo {
-        padding-left: 1rem;
+        padding-left: .0rem;
+        width: 200px;
     }
     .menu {
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         margin-bottom: 10px;
+    }
+    .menu__item {
+        justify-content: flex-end;
     }
     .menu__lista {
         visibility: hidden;
@@ -17,8 +22,12 @@
         margin-right: 5px;
     }
     .header__textos,
-    .descricao {
+    .descricao,
+    .descricaoheader {
         width: 250px;
+    }
+    .sobre_textos {
+        padding-right: 0;
     }
     .header__perfil__imagem {
         width: 120px;
@@ -44,7 +53,10 @@
     .projetos_article {
         display: flex;
         flex-direction: column;
-        width: 500px;
+    }
+    .projeto_imagem.direita,
+    .projeto_imagem.esquerda {
+        width: 300px;
     }
     .contato_imagem {
         display: none;
@@ -80,6 +92,13 @@
         align-items: center;
         justify-content: center;
     }
+    .descricaoheader {
+        width: 450px;
+    }
+     .sobre_textos {
+        margin: 20px 0;    
+        padding-right:16rem;
+    }
     .skills,
     .hobbies {
     flex-direction: row;
@@ -94,6 +113,13 @@
     .projetos_article {
         display: flex;
         flex-direction: column
+    }
+    .projeto_imagem.direita,
+    .projeto_imagem.esquerda {
+        width: 500px;
+    }
+    .projeto_imagem.esquerda {
+        margin-right: 30px;
     }
     .contato_imagem {
         display: none;
@@ -124,11 +150,22 @@
     {
         margin: 15px 0;
     }
+    .descricaoheader {
+        width: 450px;
+    }
+     .sobre_textos {
+        margin: 20px 0;    
+        padding-right:16rem;
+    }
       .projetos_article {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 100%;
         grid-gap: 20px;
+    }
+    .projeto_imagem.direita,
+    .projeto_imagem.esquerda {
+        width: 500px;
     }
     .contato_imagem {
         display: block;
@@ -163,11 +200,22 @@
         margin: 40px;
         margin-left: 10px;
      }
+     .descricaoheader {
+        width: 450px;
+    }
+     .sobre_textos {
+        margin: 20px 0;    
+        padding-right:16rem;
+    }
      .projetos_article {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 100%;
         grid-gap: 20px;
+    }
+    .projeto_imagem.direita,
+    .projeto_imagem.esquerda {
+        width: 500px;
     }
     .contato_imagem {
         display: block;

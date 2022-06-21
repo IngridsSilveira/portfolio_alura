@@ -1,10 +1,3 @@
-document.getElementById('sendmail').addEventListener('click', function(event){
-    event.preventDefault();
-      document.location.href = 'mailto:ingridsouzaok@gmail.com';
-  });
-
-
-
 export function valida(input) {
     const tipoDeInput = input.dataset.tipo
 
